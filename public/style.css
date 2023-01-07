@@ -1,0 +1,221 @@
+li {
+  list-style-type: none;
+
+}
+
+body {
+  background-color: rgba(252, 246, 253, 0.829);
+}
+
+.p3a {
+  border-left: 2px gray solid;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.p2a {
+  border-left: 2px gray solid;
+  padding-left: 10px;
+
+}
+
+.heading {
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading:hover {
+  cursor: pointer;
+  color: #ff250d;
+}
+
+.para {
+  color: grey;
+}
+
+.cardbox {
+  max-width: 700px;
+}
+
+.cardbox:hover {
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.12);
+}
+
+.reds {
+  color: red;
+}
+
+.customcard {
+  padding: 4% 3%;
+  width: 22%;
+  border: 1px solid lightgrey;
+
+}
+
+.customcard:hover {
+  box-shadow: 7px 5px 6px 3px rgba(0, 0, 0, 0.12);
+
+  cursor: pointer;
+
+}
+
+.custombtn {
+  background-color: #45b44d;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.custombtndiv {
+  display: none;
+}
+
+.customcard:hover .custombtndiv {
+  display: block;
+}
+
+.cardscontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.customcarousel {
+  height: 85vh;
+}
+
+.customtext {
+
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  height: 85vh;
+  width: 50%;
+  color: black;
+  padding-top: 30vh;
+  font-weight: bold;
+}
+
+.firstsecimg {
+  height: 100vh;
+}
+
+.abc {
+  background-image: url(/images/first.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+.erm {
+  width: 30%;
+  backdrop-filter: blur(20);
+  backdrop-filter: invert(80%);
+  backdrop-filter: grayscale(50%);
+  backdrop-filter: sepia(50%);
+  font-size: 28px;
+padding: 10px;
+
+}
+
+.firstpera {
+  padding-top: 100px;
+  padding-left: 100px;
+  margin-top: 5%;
+}
+
+.teb {
+  border: 1px solid green;
+  width: 20%;
+  background-color: green;
+  color: white;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 900px) {
+  .customcard {
+    width: 32%;
+  }
+
+  .firstpera {
+    margin-top: 4%;
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .customcard {
+    width: 45%;
+  }
+
+  .erm {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .firstpera {
+    margin-top: 3%;
+    padding-top: 40px;
+  }
+
+  .tet {
+    font-size: 18px;
+    width: 30px;
+    display: inline-flex;
+    margin: 0;
+    text-align: center;
+
+
+  }
+
+  .teb {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .customcarousel {
+    height: 320px;
+  }
+
+  .abc {
+    padding-top: 50px;
+    height: 90vh;
+  }
+
+  .firstpera {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .firstsecimg {
+    height: 80vh;
+  }
+
+  .customtext {
+    padding-top: 5vh;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .cardscontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .customcard {
+    width: 100%;
+  }
+
+  .tet {
+    font-size: 20px;
+    width: 30px;
+
+  }
+}
